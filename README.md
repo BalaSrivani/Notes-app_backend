@@ -1,7 +1,8 @@
 # 📝 Notes App — Backend
 
 This is the backend server for the Notes App.  
-It is a Node.js + Express + MongoDB API that supports creating users, managing notes (create, read, update, delete), and searching/filtering notes.
+It is a Node.js + Express + MongoDB API that supports creating users,logging in, managing notes (create, read, update, delete), and searching/filtering notes.
+this backend also uses bcryptjs for password encryption and jsonwebtoken for authentication.
 
 ---
 
@@ -30,19 +31,39 @@ It is a Node.js + Express + MongoDB API that supports creating users, managing n
 
 ## 📂 Project Structure
 
-backend/
-├── routes/ # All route handlers
-│ ├── user.routes.js
-│ ├── note.routes.js
-│ ├── search.routes.js
-├── models/ # Mongoose models
-│ ├── User.js
-│ ├── Note.js
-├── app.js # Express app config
-├── server.js # Server entry point
-├── .env # Environment variables (not committed)
-├── package.json
-└── README.md
+routes/
+
+Contains all Express route handlers:
+
+user.routes.js — User creation/login.
+
+note.routes.js — CRUD operations for notes.
+
+search.routes.js — Search notes by keyword.
+
+models/
+
+Contains Mongoose schemas:
+
+User.js — Defines the user schema.
+
+Note.js — Defines the note schema.
+
+app.js
+
+Main app setup (Express, CORS, JSON parsing).
+
+index.js :
+
+Entry point — starts listening on the configured port.
+
+.env
+
+Environment variables (MongoDB URI, secret, port).
+
+package.json
+
+Project metadata & dependencies.
 
 
 ---
