@@ -68,6 +68,16 @@ Project metadata & dependencies.
 
 ---
 
+Responsive UI
+
+🌐 Live Demo
+
+Frontend : notes-app-frontend-git-main-bala-srivani-vattams-projects.vercel.app
+
+Backend API : https://notes-app-backend-cppi.onrender.com
+
+
+
 ## 🛠️ Getting Started
 
 1️⃣ Clone the repository
