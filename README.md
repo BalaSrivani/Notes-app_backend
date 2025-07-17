@@ -74,10 +74,12 @@ Project metadata & dependencies.
 ```bash
 git clone https://github.com/BalaSrivani/Notes-app_backend
 cd backend
+```
 
 2️⃣ Install dependencies
 ```bash
 npm install
+```
 
 3️⃣ Set up environment variables
 Create a .env file in the root of the backend folder and add:
@@ -88,3 +90,4 @@ PORT=8000
 🔗 Run the server locally
 ```bash
 npm start
+```
